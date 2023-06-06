@@ -626,19 +626,19 @@ M.plugins = {
         -----------------------------------------
         -- lsp
         -----------------------------------------
-        --           -- ["@lsp.type.class"] = { link = "Structure" },
-        -- ["@lsp.type.decorator"] = { link = "Function" },
-        -- ["@lsp.type.enum"] = { link = "Structure" },
+        ["@lsp.type.class"] = { fg = colors.pink },
+        ["@lsp.type.decorator"] = { fg = colors.green_func },
+        ["@lsp.type.enum"] = { fg = colors.green_func },
         -- ["@lsp.type.enumMember"] = { link = "Constant" },
-        ["@lsp.type.function"] = { fg = colors.green_func },
+        ["@lsp.type.function"]     = { fg = colors.green_func },
         -- ["@lsp.type.interface"] = { link = "Structure" },
         -- ["@lsp.type.macro"] = { link = "Macro" },
-        ["@lsp.type.method"]       = { fg = colors.green_func },
+        ["@lsp.type.method"]       = { fg = colors.pink },
         ["@lsp.type.namespace"]    = { fg = colors.blue_type },
-        ["@lsp.type.parameter"]    = { fg = colors.white },
-        ["@lsp.type.property"] = { fg = colors.white1 },
-        ["@lsp.type.struct"] = { fg = colors.green_func },
-        ["@lsp.type.type"] = { fg = colors.blue_type },
+        ["@lsp.type.parameter"]    = { fg = colors.blue_type },
+        ["@lsp.type.property"]     = { fg = colors.green },
+        ["@lsp.type.struct"]       = { fg = colors.pink },
+        ["@lsp.type.type"]         = { fg = colors.blue_type },
         -- ["@lsp.type.typeParameter"] = { link = "TypeDef" },
         ["@lsp.type.variable"]     = { fg = colors.white },
         ["@lsp.type.comment"]      = { fg = colors.comment, style = 'italic' },
@@ -647,7 +647,7 @@ M.plugins = {
         ["@lsp.type.selfParameter"] = { fg = colors.pink },
         -- ["@lsp.type.builtinConstant"] = { link = "@constant.builtin" },
         ["@lsp.type.builtinConstant"] = { fg = colors.pink },
-        ["@lsp.type.magicFunction"] = { fg = colors.green_func },
+        ["@lsp.type.magicFunction"] = { fg = colors.pink },
 
 
         ["@lsp.mod.readonly"] = { fg = colors.pink },
@@ -660,12 +660,12 @@ M.plugins = {
         ["@lsp.typemod.keyword.documentation"] = { fg = colors.gray_punc },
 
         ["@lsp.typemod.variable.global"] = { fg = colors.pink },
-        ["@lsp.typemod.variable.static"] = { fg = colors.pink},
+        ["@lsp.typemod.variable.static"] = { fg = colors.pink },
         ["@lsp.typemod.variable.defaultLibrary"] = { fg = colors.gray_punc },
 
-        ["@lsp.typemod.function.builtin"] = { fg = colors.green_func },
-        ["@lsp.typemod.function.defaultLibrary"] = { fg = colors.green_func },
-        ["@lsp.typemod.method.defaultLibrary"] = { fg = colors.green_func },
+        ["@lsp.typemod.function.builtin"] = { fg = colors.pink },
+        ["@lsp.typemod.function.defaultLibrary"] = { fg = colors.pink },
+        ["@lsp.typemod.method.defaultLibrary"] = { fg = colors.pink },
 
         ["@lsp.typemod.operator.injected"] = { fg = colors.white },
         ["@lsp.typemod.string.injected"] = { fg = colors.yellow },
