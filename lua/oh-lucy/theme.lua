@@ -33,10 +33,10 @@ M.base = {
         Debug        = { fg = colors.fg },
         Define       = { fg = colors.blue_type },
         Delimiter    = { fg = colors.gray_punc },
-        DiffAdd      = { fg = colors.green_func },
-        DiffAdded    = { fg = colors.green_func },
-        DiffChange   = { fg = colors.green_func },
-        DiffDelete   = { fg = colors.red_key_w },
+        DiffAdd      = { fg = colors.green_func, bg = "NONE" },
+        DiffAdded    = { fg = colors.green_func, bg = "NONE"  },
+        DiffChange   = { fg = colors.green_func, bg = "NONE"  },
+        DiffDelete   = { fg = colors.red_key_w, bg = "NONE"  },
         DiffRemoved  = { fg = colors.red_key_w },
         DiffText     = { fg = colors.white1 },
         DiffFile     = { fg = colors.pink },
@@ -328,7 +328,7 @@ M.plugins = {
         -----------------------------------------
         -- NerdTree: github.com/preservim/nerdtree
         -----------------------------------------
-        Directory                  = { fg = colors.white },
+        Directory                  = { fg = colors.blue_type },
         NERDTreeUp                 = { fg = colors.yellow },
         NERDTreeDir                = { fg = colors.blue_type },
         NERDTreeOpenable           = { fg = colors.comment },
@@ -669,6 +669,22 @@ M.plugins = {
         ["@lsp.typemod.operator.injected"] = { link = "Operator" },
         ["@lsp.typemod.string.injected"] = { link = "String" },
         ["@lsp.typemod.variable.injected"] = { link = "@variable" },
+
+        ----------------------------------
+        --plugins
+        ----------------------------------
+                -- NeoTree
+        NeoTreeRootName = { link = "NeoTreeRootName" },
+        NeoTreeDirectoryName = { link = "Normal" },
+        NeoTreeModified = { link = "String" },
+        NeoTreeGitModified = { link = "DiffChange" },
+        NeoTreeGitAdded = { link = "DiffAdd" },
+        NeoTreeGitDeleted = { link = "DiffDelete" },
+        NeoTreeGitStaged = { link = "DiffAdded"},
+        NeoTreeGitConflict = { link = "Error" },
+        NeoTreeGitUntracked = { link = "NeoTreeGitModified" },
+        NeoTreeGitUnstaged = { link = "NeoTreeGitModified" },
+        NeoTreeIndentMarker = { link = "NonText" },
 }
 
 return M
