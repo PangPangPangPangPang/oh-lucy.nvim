@@ -316,10 +316,10 @@ M.plugins = {
         DiagnosticSignInfo         = { fg = colors.yellow, bg = colors.line_bg },
         DiagnosticSignWarn         = { fg = colors.orange_wr, bg = colors.line_bg },
 
-        DiagnosticUnderlineError   = { style = 'underline' },
-        DiagnosticUnderlineHint    = { style = 'underline' },
-        DiagnosticUnderlineInfo    = { style = 'underline' },
-        DiagnosticUnderlineWarn    = { style = 'underline' },
+        DiagnosticUnderlineError   = { style = 'undercurl' },
+        DiagnosticUnderlineHint    = { style = 'undercurl' },
+        DiagnosticUnderlineInfo    = { style = 'undercurl' },
+        DiagnosticUnderlineWarn    = { style = 'undercurl' },
 
         DiagnosticVirtualTextError = { fg = colors.red_err },
         DiagnosticVirtualTextHint  = { fg = colors.gray2 },
@@ -388,9 +388,9 @@ M.plugins = {
         LspDiagnosticsSignHint               = { fg = colors.blue_type },                 -- Deprecated
         LspDiagnosticsSignInformation        = { fg = colors.yellow },                    -- Deprecated
         LspDiagnosticsSignWarning            = { fg = colors.orange_wr },                 -- Deprecated
-        LspDiagnosticsUnderlineError         = { style = 'underline' },                   -- Deprecated
-        LspDiagnosticsUnderlineHint          = { style = 'underline' },                   -- Deprecated
-        LspDiagnosticsUnderlineWarning       = { style = 'underline' },                   -- Deprecated
+        LspDiagnosticsUnderlineError         = { style = 'undercurl' },                   -- Deprecated
+        LspDiagnosticsUnderlineHint          = { style = 'undercurl' },                   -- Deprecated
+        LspDiagnosticsUnderlineWarning       = { style = 'undercurl' },                   -- Deprecated
         LspDiagnosticsVirtualTextWarning     = { fg = colors.orange_wr },                 -- Deprecated
         LspDiagnosticsWarning                = { fg = colors.orange_wr },                 -- Deprecated
         LspReferenceRead                     = { bg = colors.fg_gutter, style = 'bold' }, -- Deprecated
@@ -402,7 +402,7 @@ M.plugins = {
         LspDiagnosticsDefaultInformation     = { fg = colors.yellow },                    -- Deprecated
         LspDiagnosticsVirtualTextHint        = { fg = colors.gray2 },                     -- Deprecated
         LspDiagnosticsVirtualTextInformation = { fg = colors.yellow },                    -- Deprecated
-        LspDiagnosticsUnderlineInformation   = { style = 'underline' },                   -- Deprecated
+        LspDiagnosticsUnderlineInformation   = { style = 'undercurl' },                   -- Deprecated
         -----------------------------------------
 
 
